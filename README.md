@@ -19,5 +19,5 @@ if it is it snaps it inside its neighbors
 
 it uses:
 ```GDScript
-bitmap.opaque_to_polygons
+bitmap.opaque_to_polygons()
 ```
