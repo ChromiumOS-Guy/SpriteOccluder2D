@@ -15,6 +15,7 @@ func _ready(): # adds all childern that should be added
 	var MainLightOccluder = LightOccluder2D.new()
 	MainLightOccluder.occluder = MainOccluderPolygon
 	MainLightOccluder.name = "MainLightOccluder2D"
+	MainLightOccluder.light_mask = self.light_mask
 	add_child(MainLightOccluder,true)
 	
 	if self.centered: # disables centered
@@ -89,6 +90,7 @@ func _draw_shadow(polygons : Array) -> void: # draws the shadows
 				var OccluderPolygon = OccluderPolygon2D.new()
 				OccluderPolygon.polygon = polygon
 				LightOccluder.occluder = OccluderPolygon
+				LightOccluder.light_mask = self.light_mask
 				$LightOccluders2D.add_child(LightOccluder,true)
 			count += 1
 

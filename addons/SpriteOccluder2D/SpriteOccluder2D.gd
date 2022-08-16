@@ -20,6 +20,7 @@ func _ready():
 			var OccluderPolygon = OccluderPolygon2D.new()
 			OccluderPolygon.polygon = polygon
 			LightOccluder.occluder = OccluderPolygon
+			LightOccluder.light_mask = self.light_mask
 			add_child(LightOccluder)
 
 
