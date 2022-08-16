@@ -18,6 +18,6 @@ theres a point in polygon that is to close to its neighbors
 if it is it snaps it inside its neighbors
 
 it uses:
-```GDscript
+```GDScript
 bitmap.opaque_to_polygons
 ```
