@@ -19,5 +19,9 @@ if it is it snaps it inside its neighbors
 
 it uses:
 ```GDScript
+bitmap.create_from_image_alpha(image)
 bitmap.opaque_to_polygons()
 ```
+to create a polygon which later get used inside a LightOccluder2D
+if theres more then one polygon then it creates more LightOccluder2D's
+and then deletes them next frame
