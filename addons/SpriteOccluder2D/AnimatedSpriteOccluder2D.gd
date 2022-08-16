@@ -26,6 +26,8 @@ func _process(delta): # main logic for getting right polygons
 	if self.frames != null:
 		if $LightOccluders2D.get_child_count() != 0:
 			_remove_prev_shadows()
+		if $MainLightOccluder2D.light_mask != self.light_mask:
+			$MainLightOccluder2D.light_mask = self.light_mask
 		var image : Image = self.frames.get_frame(self.animation,self.frame).get_data()
 		bitmap.create_from_image_alpha(image)
 		var polygons = bitmap.opaque_to_polygons(Rect2(Vector2(0,0), bitmap.get_size()),epsilon)
