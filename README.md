@@ -25,3 +25,12 @@ bitmap.opaque_to_polygons()
 to create a polygon which later get used inside a LightOccluder2D
 if theres more then one polygon then it creates more LightOccluder2D's
 and then deletes them next frame
+
+
+# Warning ⚠️
+
+Currently does not support rotation
+
+You can't rotate without breaking
+
+the shadow
