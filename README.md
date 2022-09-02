@@ -1,3 +1,7 @@
+# postponed until further notice
+
+Due to a predicament I won't be able to work on this project for a while
+
 # SpriteOccluder2D
 SpriteOccluder2D is a godot plugin that adds special sprites that act like LightOccluders
 tthe adds two node types
