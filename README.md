@@ -17,7 +17,7 @@ the lower it is the more accuracte but the lower it is
 the more resource intensive it is
 
 Smoothing Experimental is by default off
-Its a simple algorithm that checks to see if 
+Its a simple and basic algorithm that checks to see if 
 theres a point in polygon that is to close to its neighbors
 if it is it snaps it inside its neighbors
 
